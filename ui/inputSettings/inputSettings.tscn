@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg7xc4cmg5j6d"]
+
+[ext_resource type="Theme" uid="uid://cffyb36ygo7ve" path="res://ui/game_theme.tres" id="1_343ya"]
+[ext_resource type="Script" path="res://ui/inputSettings/inputSettings.gd" id="2_2ahwv"]
+[ext_resource type="PackedScene" uid="uid://b02ibyjc0sogj" path="res://ui/inputSettings/input_button.tscn" id="3_3b663"]
+
+[node name="inputSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_343ya")
+script = ExtResource("2_2ahwv")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -302.0
+offset_top = -195.0
+offset_right = 303.0
+offset_bottom = 195.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ActionList" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="InputButton" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/ActionList" instance=ExtResource("3_3b663")]
+layout_mode = 2
+
+[node name="InputButton2" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/ActionList" instance=ExtResource("3_3b663")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="AcceptButton" type="Button" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accept"
+
+[node name="ResetButton" type="Button" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Reset Input"
+
+[connection signal="pressed" from="Panel/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer/AcceptButton" to="." method="_on_accept_button_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
