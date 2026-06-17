@@ -52,7 +52,7 @@ Path of Hollowness/
 - **Assets/Arts Demo:** https://www.artstation.com/artwork/EzaR0N
 ---
 
-##Credits
+## Credits
 - **Huge thanks to Robin Eversunshine for the assets and inspiration.**
 - **Game referenced by the award winning: Hollow Knight.**
 
