@@ -1,8 +1,6 @@
 # Path of Hollowness
 
-A pixel-art 2D precision platformer built in **Godot 4**, inspired by *Path of Pain* — the final and hardest level of *Hollow Knight*. The goal is simple to describe and brutal to do: dash, jump, and air-dash through a chain of deadly rooms without dying.
-
-I built this in **October 2023**, about two weeks after first picking up Godot. It started as a way to learn the engine and turned into a full, playable game with tutorials, multiple levels, save/load, and a settings menu.
+A pixel-art 2D precision platformer built in **Godot 4**, inspired by *Path of Pain* by Robin Eversunshine — the final and hardest level of *Hollow Knight*. The goal is simple to describe and brutal to do: dash, jump, and air-dash through a chain of deadly rooms without dying.
 
 ## Features
 
@@ -15,7 +13,7 @@ I built this in **October 2023**, about two weeks after first picking up Godot. 
 
 ## Controls
 
-- **Move:** Arrow keys
+- **Move:** Arrow keys/Configured in the in-game **Settings** menu
 - **Jump / Dash / Attack:** as configured in the in-game **Settings** menu
 
 All inputs are rebindable from the Settings screen.
@@ -50,9 +48,13 @@ Path of Hollowness/
 
 ## Links
 
-- **Art & asset showcase:** https://www.artstation.com/artwork/EzaR0N
-- **Gameplay / guide video:** https://youtu.be/7hBDyPOqoHY
-
+- **Inspiration and References:** https://github.com/RobinEversunshine/Godot_Pixelized_Hollow_Knight
+- **Assets/Arts Demo:** https://www.artstation.com/artwork/EzaR0N
 ---
 
+##Credits
+- **Huge thanks to Robin Eversunshine for the assets and inspiration.**
+- **Game referenced by the award winning: Hollow Knight.**
+
 Made by **pocile703**.
+**MADE FOR EDUCATIONAL PURPOSES ONLY**
