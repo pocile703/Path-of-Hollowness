@@ -62,4 +62,4 @@ Made by **pocile703**.
 
 I made this as my final year project so for any copyright concerns please do contact me.
 
-**ALL CREDITS GO TO [Robin Eversunshin]([https://godotengine.org/download](https://github.com/RobinEversunshine)) AS I ONLY ADDED TUTORIAL LEVELS TO HIS GAME**
+**ALL CREDITS GO TO [Robin Eversunshin](https://github.com/RobinEversunshine)**
